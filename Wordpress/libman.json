@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootswatch@5.3.3",
+      "destination": "wwwroot/lib/bootswatch/",
+      "files": [
+        "lumen/bootstrap.css",
+        "lumen/bootstrap.min.css",
+        "lumen/bootstrap.min.css.map",
+        "lumen/bootstrap.rtl.css",
+        "lumen/bootstrap.rtl.min.css",
+        "lumen/bootstrap.rtl.min.css.map"
+      ]
+    }
+  ]
+}

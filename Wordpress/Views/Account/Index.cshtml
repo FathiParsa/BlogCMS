@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Login";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@model LoginViewModel
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4>ورود به سامانه</h4>
+                </div>
+                <div class="card-body">
+                    @using (Html.BeginForm("TryToLogin", "Account", new { @id = string.Empty }, FormMethod.Post, false, new { @id = "loginForm" }))
+                    {
+                        //Username----------------------------------------------------------------------------------------
+                        <div class="mb-3">
+                            <label for="inputUsername" class="form-label">نام کاربری</label>
+                            @Html.TextBoxFor(model => model.Username, new
+                                {
+                                    @class = "form-control",
+                                    @style = "direction : ltr; text-align: left",
+                                    @autocomplete = "off",
+                                    @placeholder = "نام کاربری را وارد کنید"
+                                })
+                        </div>
+
+                        //Password----------------------------------------------------------------------------------------
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">گذرواژه</label>
+                            @Html.PasswordFor(model => model.Password, new
+                                {
+                                    @class = "form-control",
+                                    @style = "direction: ltr ; text-align: left",
+                                    @autocomplete = "off",
+                                    @placeholder = "رمز عبور را وارد کنید"
+                                })
+                        </div>
+
+                        <div id="passwordHelpBlock" class="form-text">
+                            رمز عبور شما باید حداقل دارای 8 و حداکثر دارای 20 کاراکتر باشد.
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">ورود</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,202 @@
+﻿@{
+    ViewBag.Title = "Admin Panel";
+    Layout = "_Layout2";
+}
+
+<link href="~/css/site.css" rel="stylesheet" />
+
+<style>
+    body {
+        font-family: 'Vazir', sans-serif;
+    }
+
+    .sidebar {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        background-color: #343a40;
+        color: white;
+        padding-top: 20px;
+    }
+    .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+        }
+    .sidebar a:hover {
+                background-color: #495057;
+            }
+
+    .content {
+        margin-right: 150px;
+        margin-left: 50px;
+        padding: 20px;
+    }
+    /* media (max-width: 768px) {
+                .sidebar {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                }
+                .content {
+                    margin-right: 0;
+                }
+            } */
+
+</style>
+
+<div class="sidebar">
+    <h2 class="text-center">
+        داشبورد ادمین
+    </h2>
+    <a href="#">
+        <i class="fas fa-home">
+        </i>
+        خانه
+    </a>
+    <a href="#">
+        <i class="fas fa-edit">
+        </i>
+        مدیریت پست‌ها
+    </a>
+    <a href="#">
+        <i class="fas fa-file-alt">
+        </i>
+        مدیریت صفحه‌ها
+    </a>
+    <a href="#">
+        <i class="fas fa-tags">
+        </i>
+        مدیریت تگ‌ها
+    </a>
+    <a href="#">
+        <i class="fas fa-comments">
+        </i>
+        مدیریت کامنت‌ها
+    </a>
+    <a href="#">
+        <i class="fas fa-users">
+        </i>
+        مدیریت کاربران
+    </a>
+    <a href="#">
+        <i class="fas fa-cogs">
+        </i>
+        تنظیمات
+    </a>
+</div>
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1>
+                    خوش آمدید به داشبورد ادمین
+                </h1>
+                <p>
+                    این بخش برای مدیریت محتوای سایت شما طراحی شده است.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img alt="تصویر نمونه برای پست‌ها" class="card-img-top" height="400" src="~/Admin-Sources/30598.jpg" width="600" />
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            مدیریت پست‌ها
+                        </h5>
+                        <p class="card-text">
+                            اینجا می‌توانید پست‌های جدید ایجاد کنید و پست‌های موجود را ویرایش کنید.
+                        </p>
+                        <a class="btn btn-primary" href="#">
+                            بیشتر بدانید
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img alt="تصویر نمونه برای صفحه‌ها" class="card-img-top" height="400" src="~/Admin-Sources/2148489298.jpg" width="600" />
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            مدیریت صفحه‌ها
+                        </h5>
+                        <p class="card-text">
+                            اینجا می‌توانید صفحه‌های جدید ایجاد کنید و صفحه‌های موجود را ویرایش کنید.
+                        </p>
+                        <a class="btn btn-primary" href="#">
+                            بیشتر بدانید
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img alt="تصویر نمونه برای تگ‌ها" class="card-img-top" height="400" src="~/Admin-Sources/freepik__expand__93527.png" width="600" />
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            مدیریت تگ‌ها
+                        </h5>
+                        <p class="card-text">
+                            اینجا می‌توانید تگ‌های جدید ایجاد کنید و تگ‌های موجود را ویرایش کنید.
+                        </p>
+                        <a class="btn btn-primary" href="#">
+                            بیشتر بدانید
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img alt="تصویر نمونه برای کامنت‌ها" class="card-img-top" height="400" src="~/Admin-Sources/65.jpg" width="600" />
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            مدیریت کامنت‌ها
+                        </h5>
+                        <p class="card-text">
+                            اینجا می‌توانید کامنت‌های جدید را مدیریت کنید و کامنت‌های موجود را ویرایش کنید.
+                        </p>
+                        <a class="btn btn-primary" href="#">
+                            بیشتر بدانید
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img alt="تصویر نمونه برای کاربران" class="card-img-top" height="400" src="~/Admin-Sources/freepik__upload__12092.jpeg" width="600" />
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            مدیریت کاربران
+                        </h5>
+                        <p class="card-text">
+                            اینجا می‌توانید کاربران جدید ایجاد کنید و کاربران موجود را ویرایش کنید.
+                        </p>
+                        <a class="btn btn-primary" href="#">
+                            بیشتر بدانید
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img alt="تصویر نمونه برای تنظیمات" class="card-img-top" height="400" src="~/Admin-Sources/freepik__upload__27877.jpeg" width="600" />
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            تنظیمات
+                        </h5>
+                        <p class="card-text">
+                            اینجا می‌توانید تنظیمات سایت خود را مدیریت کنید.
+                        </p>
+                        <a class="btn btn-primary" href="#">
+                            بیشتر بدانید
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
